@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://ehcconference2022.github.io//sitemap.xml
+Sitemap: https://ehcconference2022.github.io/sitemap.xml

@@ -10,11 +10,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Atom Feed (Styled)</title>
 
-    <link rel="stylesheet" type="text/css" href="https://ehcconference2022.github.io//assets/css/styles_feeling_responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://ehcconference2022.github.io/assets/css/styles_feeling_responsive.css">
 
   
 
-	<script src="https://ehcconference2022.github.io//assets/js/modernizr.min.js"></script>
+	<script src="https://ehcconference2022.github.io/assets/js/modernizr.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 	<script>
@@ -37,13 +37,13 @@
 	
 	
 	
-	<link rel="canonical" href="https://ehcconference2022.github.io//assets/xslt/atom.xslt">
+	<link rel="canonical" href="https://ehcconference2022.github.io/assets/xslt/atom.xslt">
 
 
 	<!-- Facebook Open Graph -->
 	<meta property="og:title" content="Atom Feed (Styled)">
 	<meta property="og:description" content="">
-	<meta property="og:url" content="https://ehcconference2022.github.io//assets/xslt/atom.xslt">
+	<meta property="og:url" content="https://ehcconference2022.github.io/assets/xslt/atom.xslt">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="EHC Conference 2022">
@@ -61,7 +61,7 @@
 	
 	
 
-	<link type="text/plain" rel="author" href="https://ehcconference2022.github.io//humans.txt">
+	<link type="text/plain" rel="author" href="https://ehcconference2022.github.io/humans.txt">
 
 	
 
@@ -107,7 +107,7 @@
   <nav class="top-bar" role="navigation" data-topbar data-options="scrolltop: false">
     <ul class="title-area">
       <li class="name">
-      <h1 class="hide-for-large-up"><a href="https://ehcconference2022.github.io/"><img src="/assets/img/logo.png" height="20" width="20"> EHC Conference 2022</a></h1>
+      <h1 class="hide-for-large-up"><a href="https://ehcconference2022.github.io"><img src="/assets/img/logo.png" height="20" width="20"> EHC Conference 2022</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar toggle-topbar-click menu-icon"><a><span></span></a></li>
@@ -124,7 +124,7 @@
 
             
             
-              <li><a  href="https://ehcconference2022.github.io//">Start</a></li>
+              <li><a  href="https://ehcconference2022.github.io/">Start</a></li>
               <li class="divider"></li>
 
             
@@ -139,7 +139,7 @@
 
             
             
-              <li><a  href="https://ehcconference2022.github.io//what-to-see/">What to see</a></li>
+              <li><a  href="https://ehcconference2022.github.io/what-to-see/">What to see</a></li>
               <li class="divider"></li>
 
             
@@ -154,7 +154,7 @@
 
             
             
-              <li><a  href="https://ehcconference2022.github.io//night-out/">Night out</a></li>
+              <li><a  href="https://ehcconference2022.github.io/night-out/">Night out</a></li>
               <li class="divider"></li>
 
             
@@ -169,7 +169,7 @@
 
             
             
-              <li><a  href="https://ehcconference2022.github.io//getting-around/">Getting around</a></li>
+              <li><a  href="https://ehcconference2022.github.io/getting-around/">Getting around</a></li>
               <li class="divider"></li>
 
             
@@ -228,7 +228,7 @@
 	<div class="row">
 		<div class="small-12 columns">
 			<a id="logo" href="https://ehcconference2022.github.io/" title="EHC Conference 2022 – Your guide to Copenhagen">
-				<img src="https://ehcconference2022.github.io//assets/img/logo.png" alt="EHC Conference 2022 – Your guide to Copenhagen">
+				<img src="https://ehcconference2022.github.io/assets/img/logo.png" alt="EHC Conference 2022 – Your guide to Copenhagen">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
@@ -318,7 +318,7 @@
 		
 
 
-<script src="https://ehcconference2022.github.io//assets/js/javascript.min.js"></script>
+<script src="https://ehcconference2022.github.io/assets/js/javascript.min.js"></script>
 
 
 
@@ -329,7 +329,17 @@
 
 
 
-
+<script type="text/javascript">
+function mapsSelector() {
+    if /* if we're on iOS, open in Apple Maps */
+      ((navigator.platform.indexOf("iPhone") != -1) || 
+       (navigator.platform.indexOf("iPad") != -1) || 
+       (navigator.platform.indexOf("iPod") != -1))
+      window.open("maps://maps.google.com/maps?daddr=<lat>,<long>&amp;ll=");
+    else /* else use Google */
+      window.open("https://maps.google.com/maps?daddr=<lat>,<long>&amp;ll=");
+  }
+</script>
 
 		]]></xsl:text>
 	</body>
